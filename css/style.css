@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+@font-face {
+  font-family: Whatsapp;
+  src: url(font.ttf);
+}
+@font-face {
+  font-family: Anu;
+  src: url(thin.ttf);
+}
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body
+{
+	position: fixed;
+	width: 100%;
+	min-height: 100vh;
+	background: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section
+{
+	width: 400px;
+	min-height: 100vh;
+	background: url('bege.jpeg') no-repeat;
+	background-size: cover;
+}
+section .join
+{
+	position: fixed;
+	overflow: visible;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	min-height: 200px;
+	background: #fff;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: 5px 5px 5px 1000px rgba(0,0,0,.50);
+}
+section .join .icon
+{
+	position: fixed;
+	top:0;
+	left:0;
+	transform: translate(165px,-50%);
+	width: 70px;
+	height: 70px;
+	background: url('https://img.inews.co.id/media/600/files/inews_new/2019/08/28/Korea.jpg') no-repeat;
+	background-size: cover;
+	border:2px solid #fff;
+	border-radius: 50%;
+	z-index: 999;
+}
+section .join .content
+{
+	position: relative;
+	width: 100%;
+	background: #FFF;
+	min-height: 136px;
+	padding: 40px 20px 20px 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	animation: naik 0.3s forwards linear;
+	transition: .5s;
+}
+section .join .content h1
+{
+	font-family: 'Whatsapp';
+	font-size: 20px;
+	color:#333;
+	font-weight: 100;
+}
+section .join .content .ceo
+{
+	margin-top: 7px;
+	font-family: 'Anu';
+	font-size: 13px;
+	font-weight: 600;
+	color:rgba(0,0,0,.50);
+	letter-spacing: 0.5px;
+}
+section .join .content .desc
+{
+	margin-top: 10px;
+	text-align: center;
+	color:rgba(0,0,0,.50);
+	font-family: 'Anu';
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	font-size: 14px;
+	box-decoration-break: clone;
+}
+section .join .content .desc .bold
+{
+	font-weight: 800;
+	font-family: 'Whatsapp';
+	color:rgba(0,0,0,.70);
+}
+section .join .content .desc .more
+{
+	cursor: pointer;
+	color: skyblue;
+}
+section .join .content .peserta
+{
+	margin-top: 10px;
+	position: relative;
+	width: 100%;
+	color:rgba(0,0,0,.50);
+	font-family: 'Anu';
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	font-size: 12px;
+}
+section .join .content .profile
+{
+	position: relative;
+	margin-top: 5px;
+	width: 100%;
+	height: 120px;
+	padding: 5px;
+	overflow-x: scroll;
+}
+section .join .content .profile ul
+{
+	position: relative;
+	display: flex;
+}
+section .join .content .profile ul li
+{
+	margin-right: 20px;
+	display: inline;
+	list-style: none;
+	width: 70px;
+	height: 109px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+section .join .content .profile ul li .imgBox
+{
+	width: 50px;
+	height: 50px;
+	background: red;
+	border-radius: 50%;
+	overflow:hidden;
+	object-fit: cover;
+}
+section .join .content .profile ul li .imgBox img
+{
+	min-width: 100%;
+	height: 100%;
+}
+section .join .content .profile ul li .nama
+{
+	text-align: center;
+	margin-top: 5px;
+	font-family: 'Anu';
+	font-size: 13px;
+	font-weight: 600;
+	color:#333;
+	letter-spacing: 0.5px;
+}
+section .join .bottom
+{
+	background: #fff;
+	position: relative;
+	border-top: 1.5px solid #F2F2F2;
+	width: 100%;
+	height:65px;
+	padding: 10px 20px 10px 109px;
+	display: flex;
+	align-items: center;
+}
+section .join .bottom a
+{
+	cursor: pointer;
+	font-size: 15px;
+	color:mediumseagreen;
+	text-decoration: none;
+	font-family: 'Whatsapp';
+}
+section .join .bottom a:nth-child(1)
+{
+	margin-right: 30px;
+}
+section .loading
+{
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	animation: ups .1s forwards linear;
+}
+.loading span
+{
+	margin-top: 20px;
+	color:rgba(0,0,0,.50);
+	font-weight: 600;
+	font-family: 'Anu';
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	/*animation: naik .5s forwards linear;*/
+}
+.loading .spin
+{
+	width: 160px;
+	height: 120px;
+	/*animation: naik .5s forwards linear;*/
+}
+@keyframes naik
+{
+	from 
+	{
+		transform: translateY(20px);
+	}
+	to 
+	{
+		transform: translateY(0);
+	}
+}
+
+@keyframes ups
+{
+	from 
+	{
+		height: 0;
+	}
+	to 
+	{
+		height: 200px;
+	}
+}
